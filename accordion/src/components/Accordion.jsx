@@ -9,8 +9,8 @@ function Accordion(props) {
           <span>+</span>
         </div>
 
-        <div className="ml-5 mt-2 text-[#6B7290] text-sm">
-          <p>{props.select? props.answer : null}</p>
+        <div className={`ml-5 mt-2 text-[#6B7290] text-sm transition-all duration-300 ease-in-out ${props.isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+          <p>{props.answer}</p>
         </div>
       </div>
     </div>
